@@ -80,7 +80,7 @@ namespace TelegramBot
                       int temp = rand.Next(max) + 1;
                       db[chatId] -= temp;
                       replyMsg += $"\nХод Бота: {temp} Число: {db[chatId]}";
-                      if (db[chatId] => 0) replyMsg = replyMsg = $"Ура! Победа Бота !";
+                      if (db[chatId] <= 0) replyMsg = replyMsg = $"Ура! Победа Бота !";
                   }
 
                   Bitmap image = new Bitmap(600, 100);
