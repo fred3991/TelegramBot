@@ -11,7 +11,7 @@ namespace TelegramBot
         {
             string token = "1772854762:AAEobF63_hHB7vZoW6_FdA8b4QHxULN4cPE";
             TelegramBotClient bot = new TelegramBotClient(token);
-            Console.WriteLine($"@{bot.GetMeAsync().Result.Username} start...");
+            Console.WriteLine($"@{bot.GetMeAsync().Result.Username} start... ");
 
             bot.OnMessage += (s, e) =>
               {
